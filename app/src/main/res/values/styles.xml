@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DialogWhenLarge">
+    <!-- Customize your theme here. -->
+    <item name="colorPrimary">#696969</item>
+    <item name="colorPrimaryDark">#696969</item>
+    <item name="colorAccent">#ff0000</item>
+        <item name="colorButtonNormal">#696969</item>
+
+</style>
+
+</resources>

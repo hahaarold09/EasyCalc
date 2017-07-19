@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="#454545"
+    tools:context="harold.delecerna.com.easycalc.MainActivity"
+    >
+
+    <EditText
+        android:id="@+id/fNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="@string/enter_1st_number"
+        android:inputType="number"
+        android:textColorHint="#a9a9a9"
+        android:textColor="#ffff"
+        />
+
+    <EditText
+        android:id="@+id/lNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="@string/enter_2nd_number"
+        android:inputType="number"
+        android:textColorHint="#a9a9a9"
+        android:textColor="#ffff"
+        />
+
+
+    <TextView
+        android:id="@+id/tAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46dp"
+        android:layout_marginRight="46dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="0.05"
+        android:background="#696969"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:textColor="#ffff"
+        android:singleLine="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/firstLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+
+            >
+
+            <Button
+                android:id="@+id/btnPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="@string/add"
+                />
+
+            <Button
+                android:id="@+id/btnSub"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:onClick="Subtract"
+                android:text="@string/minus" />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:onClick="Clear"
+                android:text="@string/c" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/firstLinear"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMultiply"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:onClick="Multiply"
+                android:text="@string/x" />
+
+            <Button
+                android:id="@+id/btnDiv"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:onClick="Divide"
+                android:text="@string/div" />
+
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:onClick="Exit"
+                android:text="@string/exit" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
